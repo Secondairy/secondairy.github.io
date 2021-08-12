@@ -1,0 +1,123 @@
+body {
+  background-color: #333 !important;
+  min-height: 100vh;
+  width: 70%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branding {
+  flex: 0.4;
+  display: flex;
+}
+
+.logo {
+  width: 80px;
+  margin: auto;
+}
+
+.navbar {
+  flex: 0.30;
+  display: flex;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 100%;
+
+  color: white;
+  font-family: Ubuntu;
+}
+
+.navitem {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  font-family: Ubuntu;
+  margin: auto;
+  height: 2rem;
+}
+
+a:hover {
+  color: #E0B0FF;
+}
+
+.houses {
+  display: none;
+  scale: 1.2;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+br {
+  line-height: 500%;
+}
+
+.memberslist {
+  display: flex;
+  flex-direction:  column;
+
+}
+
+.member {
+  display: flex;
+}
+
+.memberdesc {
+  display: flex;
+  flex-direction: column;
+}
+
+.memberdesc > h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+
+  color: white;
+  font-family: Ubuntu;
+}
+
+.memberdesc > small {
+  font-size: 0.9rem;
+  line-height: 1.5;
+
+  color: white;
+  font-family: Ubuntu;
+}
+
+.memberdesc > text {
+  font-size: 1.4rem;
+  line-height: 2;
+
+  color: white;
+  font-family: Ubuntu;
+}
+
+.membercontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0.5;
+}
+
+.membersocials {
+  display: flex;
+  justify-content:  space-around;
+}
+
+.fab {
+  color: white;
+  text-decoration: none;
+  scale: 1.5;
+}
+
+.memberavatar {
+  height: 400px;
+}
