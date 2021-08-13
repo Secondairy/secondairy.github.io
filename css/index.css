@@ -128,7 +128,7 @@ br {
   width: 400px;
 }
 
-.fab {
+.fab, .fa, .fas {
   color: white;
   text-decoration: none;
   scale: 1.5;
@@ -200,7 +200,7 @@ hr {
     flex-direction: column;
   }
 
-  .fab {
+  .fab, .fa, .fas {
     padding-top: 20px;
     padding-bottom: 20px;
   }
