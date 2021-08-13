@@ -64,7 +64,7 @@ a {
 
 .houses {
   display: none;
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .slideshow-container {
@@ -131,7 +131,7 @@ br {
 .fab, .fa, .fas {
   color: white;
   text-decoration: none;
-  scale: 1.5;
+  transform: scale(1.5);
 }
 
 .memberavatar {
