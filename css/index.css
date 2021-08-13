@@ -65,6 +65,9 @@ a {
 .houses {
   display: none;
   transform: scale(1.2);
+}
+
+.houses > img {
   width: 100%;
 }
 
