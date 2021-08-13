@@ -1,5 +1,5 @@
 body {
-  background-color: #333 !important;
+  background-color: #151515 !important;
   min-height: 100vh;
   width: 70%;
   margin: auto;
@@ -75,6 +75,22 @@ a {
   max-width: 1000px;
   margin: auto;
 }
+
+.about {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #3f3f3f;
+  padding: 10px 30px 10px 30px;
+  border: 5px solid gray;
+  border-radius: 10px;
+
+  font-family: Ubuntu;
+  color: white;
+}
+
 
 br {
   line-height: 500%;
@@ -193,6 +209,9 @@ hr {
      align-self: center;
   }
 
+  .about {
+    top: 45%;
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -220,6 +239,10 @@ hr {
   .branding, .navbar {
      flex-wrap: wrap;
      justify-content: center;
+  }
+
+  .about {
+    top: 95%;
   }
 
 }
