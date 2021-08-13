@@ -3,6 +3,7 @@ body {
   min-height: 100vh;
   width: 70%;
   margin: auto;
+  overflow-y: scroll;
 }
 
 .header {
@@ -12,18 +13,19 @@ body {
 }
 
 .branding {
-  flex: 0.4;
+  flex: 0.6;
   display: flex;
+  align-items: center;
 }
 
 .logo {
-  width: 80px;
-  margin: auto;
+  height: 150px;
 }
 
 .navbar {
-  flex: 0.30;
+  flex: 0.3;
   display: flex;
+  align-items: center;
 }
 
 h1 {
@@ -41,10 +43,23 @@ h1 {
   font-family: Ubuntu;
   margin: auto;
   height: 2rem;
+  width: 150px;
+  text-align: center;
+}
+
+.branding > img, .branding > h1, .navbar > a {
+   padding: max(10px, 1%);
+   margin: max(10px,1%);
 }
 
 a:hover {
   color: #E0B0FF;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: Ubuntu;
 }
 
 .houses {
@@ -103,13 +118,14 @@ br {
 .membercontent {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex: 0.5;
+  justify-content: space-around;
+  flex: 1;
 }
 
 .membersocials {
   display: flex;
   justify-content:  space-around;
+  width: 400px;
 }
 
 .fab {
@@ -120,4 +136,85 @@ br {
 
 .memberavatar {
   height: 400px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner > img {
+  min-width: 400px;
+}
+
+hr {
+   width: 30%;
+   margin-top: 40px;
+   margin-bottom: 40px;
+}
+
+/* Media */
+@media all and (max-width: 1100px) {
+   .header {
+      flex-wrap: wrap;
+   }
+
+   .navitem {
+     border: 2px solid white;
+   }
+
+   .membercontent {
+     align-self: center;
+   }
+
+   .memberdesc {
+     padding-bottom: 50px; 
+   }
+
+   .main, .header {
+      flex-basis: 100%;
+      flex-direction: column;
+  }
+
+   .member {
+      flex-basis: 100%;
+      flex-direction: column;
+   }
+
+   .memberavatar {
+     flex: 1;
+     width: 300px;
+     align-self: center;
+  }
+
+}
+
+@media all and (max-width: 480px) {
+  .membersocials {
+    width: 20px;
+    padding: 20px;
+    margin: 20px;
+    align-self: center;
+    flex-direction: column;
+  }
+
+  .fab {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .membercontent {
+    text-align: center;
+  }
+
+  .branding, .navbar {
+     flex-wrap: wrap;
+     justify-content: center;
+  }
+
 }
