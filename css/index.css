@@ -77,11 +77,6 @@ a {
 }
 
 .about {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
   background: url("/images/branding/netherrite.png");
   background-size: 480px 280px;
   padding: 10px;
@@ -92,6 +87,13 @@ a {
 
   font-family: Ubuntu;
   color: white;
+}
+
+.more {
+  display: flex;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -211,10 +213,6 @@ hr {
      width: 300px;
      align-self: center;
   }
-
-  .about {
-    top: 45%;
-  }
 }
 
 @media all and (max-width: 480px) {
@@ -243,9 +241,4 @@ hr {
      flex-wrap: wrap;
      justify-content: center;
   }
-
-  .about {
-    top: 95%;
-  }
-
 }
