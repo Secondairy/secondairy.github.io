@@ -190,6 +190,11 @@ hr {
      border: 2px solid white;
    }
 
+     .branding, .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+   }
+
    .membercontent {
      align-self: center;
    }
@@ -235,10 +240,5 @@ hr {
 
   .membercontent {
     text-align: center;
-  }
-
-  .branding, .navbar {
-     flex-wrap: wrap;
-     justify-content: center;
   }
 }
