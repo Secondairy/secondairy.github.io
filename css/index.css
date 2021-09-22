@@ -218,6 +218,14 @@ hr {
      width: 300px;
      align-self: center;
   }
+
+  .membercontent, .branding > h1 {
+    text-align: center;
+  }
+
+  .membersocials {
+    align-self: center;
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -236,9 +244,5 @@ hr {
 
   .banner {
     display: none;
-  }
-
-  .membercontent {
-    text-align: center;
   }
 }
