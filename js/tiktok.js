@@ -12,27 +12,24 @@
     async function LoadVideos() {
     console.log("Auto-TikTok-Scroller Log: Loading Videos...");
     for (let i = 0; i < 8; i++) {
-        let videos = Array.from(document.querySelectorAll(".lazyload-wrapper"));
+        let videos = Array.from(document.querySelectorAll('[data-e2e="recommend-list-item-container"]'));
         videos[videos.length - 1].scrollIntoView({
         block: "end",
         inline: "nearest",
         });
         await sleep(3000);
     }
+    
+
     }
     await LoadVideos();
-    if (document.querySelector(".lazyload-wrapper")) {
-    document
-        .querySelector(".lazyload-wrapper span.event-delegate-mask")
-        ?.click();
-    }
     await sleep(1000);
     let downBtn = document.querySelector('[data-e2e="arrow-right"]');
     let video = document.getElementsByTagName("video")[0];
     console.log("Auto-TikTok-Scroller Log: Starting scrolling...");
     while (true) {
     await sleep(VideoDuration(video.duration, 740));
-    if (document.querySelector(".arrow-right")) downBtn.click();
+    if (document.querySelector('[data-e2e="arrow-right"]')) downBtn.click();
     else return;
     await sleep(1000);
     video = document.getElementsByTagName("video")[0];
