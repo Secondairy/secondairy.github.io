@@ -30,7 +30,7 @@
     await sleep(VideoDuration(video.duration, 740));
     if (document.querySelector('[data-e2e="arrow-right"]')) downBtn.click();
     else return;
-    await sleep(1000);
+    await sleep(3000);
     video = document.getElementsByTagName("video")[0];
     }
 })();
