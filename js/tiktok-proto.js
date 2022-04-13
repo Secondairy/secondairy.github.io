@@ -17,24 +17,20 @@
   }
   }
 
-  function videoEnded(){
+  async function videoEnded(){
     let downBtn = document.querySelector('[data-e2e="arrow-right"]');
     downBtn.click();
-    
-    await sleep(3000);
     newVideoListener();
   }
 
-  function newVideoListener() {
+  async function newVideoListener() {
     let video = document.getElementsByTagName("video")[0];
-    video.addEventListener("ended", function() {
-      videoEnded();
-  }, true);
+    video.addEventListener("ended", () => videoEnded(), false);
   }
 
   await LoadVideos();
   alert('Click to Top, then click the first video');
   
-  newVideoListener();
+  await newVideoListener();
   console.log("Auto-TikTok-Scroller Log: Starting scrolling...");
 })();
