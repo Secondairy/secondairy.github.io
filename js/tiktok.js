@@ -5,8 +5,8 @@
     return new Promise((resolve) => setTimeout(resolve, ms));
     }
 
-    function VideoDuration(duration, minusBy = 300) {
-      return duration * 1000 - minusBy;
+    function VideoDuration(duration) {
+      return duration * 1000;
     }
 
     async function LoadVideos() {
@@ -27,7 +27,7 @@
     let video = document.getElementsByTagName("video")[0];
     console.log("Auto-TikTok-Scroller Log: Starting scrolling...");
     while (true) {
-    await sleep(VideoDuration(video.duration, 740));
+    await sleep(VideoDuration(video.duration));
     if (document.querySelector('[data-e2e="arrow-right"]')) downBtn.click();
     else return;
     await sleep(1000);
