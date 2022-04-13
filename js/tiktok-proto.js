@@ -18,14 +18,18 @@
   }
 
   async function videoEnded(){
+    console.log("Video Ended");
     let downBtn = document.querySelector('[data-e2e="arrow-right"]');
     downBtn.click();
+
+    await sleep(3000);
     await newVideoListener();
   }
 
   async function newVideoListener() {
     let video = document.getElementsByTagName("video")[0];
     video.addEventListener("ended", () => videoEnded(), false);
+    console.log("Assigned video ending event");
   }
 
   await LoadVideos();
