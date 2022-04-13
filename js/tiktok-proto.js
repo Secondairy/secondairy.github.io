@@ -30,7 +30,8 @@
 
   await LoadVideos();
   alert('Click to Top, then click the first video');
-  
+  await sleep(5000);
+
   await newVideoListener();
   console.log("Auto-TikTok-Scroller Log: Starting scrolling...");
 })();
