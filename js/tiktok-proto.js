@@ -20,6 +20,8 @@
   function videoEnded(){
     let downBtn = document.querySelector('[data-e2e="arrow-right"]');
     downBtn.click();
+    
+    await sleep(3000);
     newVideoListener();
   }
 
