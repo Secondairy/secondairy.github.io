@@ -6,7 +6,7 @@
     }
 
     function VideoDuration(duration) {
-      return duration * 1000;
+      return duration * 1000 - 300;
     }
 
     async function LoadVideos() {
