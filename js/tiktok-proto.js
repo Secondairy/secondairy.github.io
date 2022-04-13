@@ -20,7 +20,7 @@
   async function videoEnded(){
     let downBtn = document.querySelector('[data-e2e="arrow-right"]');
     downBtn.click();
-    newVideoListener();
+    await newVideoListener();
   }
 
   async function newVideoListener() {
