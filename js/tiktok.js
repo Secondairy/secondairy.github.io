@@ -21,14 +21,8 @@
     }
     }
     await LoadVideos();
-    /*
-    if (document.querySelector('[data-e2e="recommend-list-item-container"]')) {
-    document
-        .querySelector(".lazyload-wrapper span.event-delegate-mask")
-        ?.click();
-    }
-     */
-    await sleep(8000);
+    alert('Click to Top, then click the first video');
+    await sleep(3000);
     let downBtn = document.querySelector('[data-e2e="arrow-right"]');
     let video = document.getElementsByTagName("video")[0];
     console.log("Auto-TikTok-Scroller Log: Starting scrolling...");
